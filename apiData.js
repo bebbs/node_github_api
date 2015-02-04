@@ -31,4 +31,38 @@ var matteo = {
   "updated_at": "2015-02-04T16:51:23Z"
 };
 
+var bebbs = {
+  "login": "bebbs",
+  "id": 7558797,
+  "avatar_url": "https://avatars.githubusercontent.com/u/7558797?v=3",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/bebbs",
+  "html_url": "https://github.com/bebbs",
+  "followers_url": "https://api.github.com/users/bebbs/followers",
+  "following_url": "https://api.github.com/users/bebbs/following{/other_user}",
+  "gists_url": "https://api.github.com/users/bebbs/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/bebbs/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/bebbs/subscriptions",
+  "organizations_url": "https://api.github.com/users/bebbs/orgs",
+  "repos_url": "https://api.github.com/users/bebbs/repos",
+  "events_url": "https://api.github.com/users/bebbs/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/bebbs/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Josh Bebbington",
+  "company": "",
+  "blog": "",
+  "location": "London, UK",
+  "email": "",
+  "hireable": false,
+  "bio": null,
+  "public_repos": 36,
+  "public_gists": 0,
+  "followers": 13,
+  "following": 14,
+  "created_at": "2014-05-12T14:24:28Z",
+  "updated_at": "2015-02-04T18:56:17Z"
+};
+
 exports.matteo = matteo;
+exports.bebbs = bebbs;
