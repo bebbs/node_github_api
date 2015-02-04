@@ -29,6 +29,6 @@ var matteo = {
   "following": 9,
   "created_at": "2014-09-06T11:47:43Z",
   "updated_at": "2015-02-04T16:51:23Z"
-}
+};
 
 exports.matteo = matteo;

@@ -14,11 +14,15 @@ module.exports = function(grunt) {
           script: 'server.js'
         }
       }
+    },
+    jshint: {
+      files: ['./*.js']
     }
-  })
+  });
 
   grunt.loadNpmTasks('grunt-mocha-casperjs');
   grunt.loadNpmTasks('grunt-express-server');
-  grunt.registerTask('default', ['express:test', 'mocha_casperjs', 'express:test:stop']);
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.registerTask('default', ['jshint', 'express:test', 'mocha_casperjs', 'express:test:stop']);
 
 };

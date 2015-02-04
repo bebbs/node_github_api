@@ -8,16 +8,25 @@ describe('the API', function() {
 
   it('should display the ID of a user', function() {
     casper.thenOpen(host + '/users/matteomanzo', function() {
-      expect('body').to.have.text('"id":8677696');
+      expect('body').to.include.text('"id":8677696');
     });
   });
 
   it('can display all of a users information', function() {
     casper.thenOpen(host + '/users/matteomanzo', function() {
-      expect('body').to.have.text('"login":"matteomanzo"');
-      expect('body').to.have.text('"public_repos":39');
-      expect('body').to.have.text('"location":"London, UK"');
+      expect('body').to.include.text('"login":"matteomanzo"');
+      expect('body').to.include.text('"public_repos":39');
+      expect('body').to.include.text('"location":"London, UK"');
     })
+  });
+
+  it('can display other users information', function() {
+    casper.thenOpen(host + '/users/bebbs', function() {
+      expect('body').to.include.text('"login":"bebbs"');
+      expect('body').to.include.text('"public_repos":36');
+      expect('body').to.include.text('"location":"London, UK"');
+    })
+
   });
 
 });
