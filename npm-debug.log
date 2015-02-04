@@ -2,15 +2,15 @@
 1 verbose cli [ 'node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '--save-dev',
-1 verbose cli   'mocha_casperjs' ]
+1 verbose cli   'grunt-express-s-server',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 warn package.json node_github_api@1.0.0 No description
 5 warn package.json node_github_api@1.0.0 No README data
 6 verbose readDependencies using package.json deps
-7 verbose cache add [ 'mocha_casperjs', null ]
-8 verbose cache add name=undefined spec="mocha_casperjs" args=["mocha_casperjs",null]
+7 verbose cache add [ 'grunt-express-s-server', null ]
+8 verbose cache add name=undefined spec="grunt-express-s-server" args=["grunt-express-s-server",null]
 9 verbose parsed url { protocol: null,
 9 verbose parsed url   slashes: null,
 9 verbose parsed url   auth: null,
@@ -20,29 +20,29 @@
 9 verbose parsed url   hash: null,
 9 verbose parsed url   search: null,
 9 verbose parsed url   query: null,
-9 verbose parsed url   pathname: 'mocha_casperjs',
-9 verbose parsed url   path: 'mocha_casperjs',
-9 verbose parsed url   href: 'mocha_casperjs' }
-10 silly lockFile 24937059-mocha-casperjs mocha_casperjs
-11 verbose lock mocha_casperjs /Users/Mimmo/.npm/24937059-mocha-casperjs.lock
-12 silly lockFile 24937059-mocha-casperjs mocha_casperjs
-13 silly lockFile 24937059-mocha-casperjs mocha_casperjs
-14 verbose addNamed [ 'mocha_casperjs', '' ]
+9 verbose parsed url   pathname: 'grunt-express-s-server',
+9 verbose parsed url   path: 'grunt-express-s-server',
+9 verbose parsed url   href: 'grunt-express-s-server' }
+10 silly lockFile 8349a011-grunt-express-s-server grunt-express-s-server
+11 verbose lock grunt-express-s-server /Users/joshbebbington/.npm/8349a011-grunt-express-s-server.lock
+12 silly lockFile 8349a011-grunt-express-s-server grunt-express-s-server
+13 silly lockFile 8349a011-grunt-express-s-server grunt-express-s-server
+14 verbose addNamed [ 'grunt-express-s-server', '' ]
 15 verbose addNamed [ null, '*' ]
-16 silly lockFile 4e016738-mocha-casperjs mocha_casperjs@
-17 verbose lock mocha_casperjs@ /Users/Mimmo/.npm/4e016738-mocha-casperjs.lock
-18 silly addNameRange { name: 'mocha_casperjs', range: '*', hasData: false }
-19 verbose request where is /mocha_casperjs
+16 silly lockFile fae98ae4-grunt-express-s-server grunt-express-s-server@
+17 verbose lock grunt-express-s-server@ /Users/joshbebbington/.npm/fae98ae4-grunt-express-s-server.lock
+18 silly addNameRange { name: 'grunt-express-s-server', range: '*', hasData: false }
+19 verbose request where is /grunt-express-s-server
 20 verbose request registry https://registry.npmjs.org/
-21 verbose request id 130b48e0f1f5df13
-22 verbose url raw /mocha_casperjs
-23 verbose url resolving [ 'https://registry.npmjs.org/', './mocha_casperjs' ]
-24 verbose url resolved https://registry.npmjs.org/mocha_casperjs
-25 verbose request where is https://registry.npmjs.org/mocha_casperjs
-26 info trying registry request attempt 1 at 16:53:59
-27 http GET https://registry.npmjs.org/mocha_casperjs
-28 http 404 https://registry.npmjs.org/mocha_casperjs
-29 verbose headers { date: 'Wed, 04 Feb 2015 16:54:00 GMT',
+21 verbose request id 72e9a9d8df49fe4a
+22 verbose url raw /grunt-express-s-server
+23 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-express-s-server' ]
+24 verbose url resolved https://registry.npmjs.org/grunt-express-s-server
+25 verbose request where is https://registry.npmjs.org/grunt-express-s-server
+26 info trying registry request attempt 1 at 17:32:41
+27 http GET https://registry.npmjs.org/grunt-express-s-server
+28 http 404 https://registry.npmjs.org/grunt-express-s-server
+29 verbose headers { date: 'Wed, 04 Feb 2015 17:32:42 GMT',
 29 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 29 verbose headers   'content-type': 'application/json',
 29 verbose headers   'cache-control': 'max-age=0',
@@ -50,14 +50,14 @@
 29 verbose headers   'accept-ranges': 'bytes',
 29 verbose headers   via: '1.1 varnish',
 29 verbose headers   age: '0',
-29 verbose headers   'x-served-by': 'cache-lhr6335-LHR',
+29 verbose headers   'x-served-by': 'cache-lhr6330-LHR',
 29 verbose headers   'x-cache': 'MISS',
 29 verbose headers   'x-cache-hits': '0',
-29 verbose headers   'x-timer': 'S1423068839.769421,VS0,VE359',
+29 verbose headers   'x-timer': 'S1423071161.738543,VS0,VE345',
 29 verbose headers   'keep-alive': 'timeout=10, max=50',
 29 verbose headers   connection: 'Keep-Alive' }
 30 silly registry.get cb [ 404,
-30 silly registry.get   { date: 'Wed, 04 Feb 2015 16:54:00 GMT',
+30 silly registry.get   { date: 'Wed, 04 Feb 2015 17:32:42 GMT',
 30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 30 silly registry.get     'content-type': 'application/json',
 30 silly registry.get     'cache-control': 'max-age=0',
@@ -65,25 +65,25 @@
 30 silly registry.get     'accept-ranges': 'bytes',
 30 silly registry.get     via: '1.1 varnish',
 30 silly registry.get     age: '0',
-30 silly registry.get     'x-served-by': 'cache-lhr6335-LHR',
+30 silly registry.get     'x-served-by': 'cache-lhr6330-LHR',
 30 silly registry.get     'x-cache': 'MISS',
 30 silly registry.get     'x-cache-hits': '0',
-30 silly registry.get     'x-timer': 'S1423068839.769421,VS0,VE359',
+30 silly registry.get     'x-timer': 'S1423071161.738543,VS0,VE345',
 30 silly registry.get     'keep-alive': 'timeout=10, max=50',
 30 silly registry.get     connection: 'Keep-Alive' } ]
-31 silly lockFile 4e016738-mocha-casperjs mocha_casperjs@
-32 silly lockFile 4e016738-mocha-casperjs mocha_casperjs@
-33 error 404 404 Not Found: mocha_casperjs
+31 silly lockFile fae98ae4-grunt-express-s-server grunt-express-s-server@
+32 silly lockFile fae98ae4-grunt-express-s-server grunt-express-s-server@
+33 error 404 404 Not Found: grunt-express-s-server
 33 error 404
-33 error 404 'mocha_casperjs' is not in the npm registry.
+33 error 404 'grunt-express-s-server' is not in the npm registry.
 33 error 404 You should bug the author to publish it
 33 error 404 It was specified as a dependency of 'node_github_api'
 33 error 404
 33 error 404 Note that you can also install from a
 33 error 404 tarball, folder, or http url, or git url.
 34 error System Darwin 14.0.0
-35 error command "node" "/usr/local/bin/npm" "install" "--save-dev" "mocha_casperjs"
-36 error cwd /Users/Mimmo/Projects/node_github_api
+35 error command "node" "/usr/local/bin/npm" "install" "grunt-express-s-server" "--save-dev"
+36 error cwd /Users/joshbebbington/Desktop/projects/node_github_api
 37 error node -v v0.10.35
 38 error npm -v 1.4.28
 39 error code E404
