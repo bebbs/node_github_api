@@ -30,9 +30,9 @@ describe('the API', function() {
   });
 
   it('can display information for any user', function() {
-    casper.thenOpen(host + '/user/tansaku', function() {
+    casper.thenOpen(host + '/users/tansaku', function() {
       expect('body').to.include.text('"login":"tansaku"');
-      expect('body').to.include.text('"public_repos":215');
+      expect('body').to.include.text('"public_repos":216');
       expect('body').to.include.text('"location":"London UK"');
     })
   });

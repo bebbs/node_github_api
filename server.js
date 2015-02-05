@@ -3,45 +3,37 @@ var https = require('https');
 var express = require('express');
 var app = express();
 var server = http.createServer(app);
-var apiData = require('./apiData');
 
-app.get('/users/matteomanzo', function(request,response) {
-  response.json({"id": apiData.matteo.id, 
-                 "login": apiData.matteo.login, 
-                 "public_repos": apiData.matteo.public_repos, 
-                 "location": apiData.matteo.location});
-});
+app.get('/users/:username', function(request, response) {
 
-app.get('/users/bebbs', function(request,response) {
-  response.json({"id": apiData.bebbs.id, 
-                 "login": apiData.bebbs.login, 
-                 "public_repos": apiData.bebbs.public_repos, 
-                 "location": apiData.bebbs.location});
-});
-
-app.get('/users', function(request,response) {
-  console.log(request.query.username);
+  var username = request.params.username;
 
   var options = {
-    host: 'https://api.github.com',
-    path: '/users/tansaku'
-  }
+    host: 'api.github.com',
+    path: '/users/' + username,
+    headers: {'User-Agent': 'babidibubi'},
+    method:'GET'
+  };
 
-  callback = function(response) {
+  callback = function(res) {
 
     var str = '';
 
-
-    response.on('data', function(chunk) {
+    res.on('data', function(chunk) {
       str += chunk;
-     });
+    });
 
-    response.on('end', function() {
-      console.log(str);
+    res.on('end', function() {
+      response.json(JSON.parse(str));
+    });
+
+    res.on('error', function(e) {
+      console.log('Got error: ' + e);
     });
   };
 
   https.request(options, callback).end();
+
 });
 
 server.listen(9999, function() {
