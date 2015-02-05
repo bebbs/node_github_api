@@ -4,6 +4,13 @@ var express = require('express');
 var app = express();
 var server = http.createServer(app);
 
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function(request, response) {
+  response.render('index');
+});
+
 app.get('/users/:username', function(request, response) {
 
   var username = request.params.username;

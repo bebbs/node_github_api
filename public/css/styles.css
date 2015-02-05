@@ -1,0 +1,62 @@
+body {
+  height: 100%;
+}
+
+.container {
+  background-color: yellow;
+  width: 50%;
+  margin: auto;
+  padding: 1%;
+  overflow: contain;
+  /*min-height: 100%;*/
+}
+
+.search-container{
+  background-color: blue;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.profile-container {
+  background-color: red;
+  padding: 10%;
+  height: auto;
+}
+
+.search-box {
+  width: 80%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.search-button {
+  display: inline;
+  margin-left: 1%;
+}
+
+.image-container {
+  background-color: green;
+  width: 39%;
+  float: left;
+  margin-right: 3%;
+  height: 100%;
+}
+
+.info-container {
+  background-color: purple;
+  width: 57%;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+#clearfix {   /* used to force the container to expand if the image is bigger */
+  display: block;
+  clear: both;
+}
