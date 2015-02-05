@@ -1,4 +1,5 @@
 var http = require('http');
+var https = require('https');
 var express = require('express');
 var app = express();
 var server = http.createServer(app);
@@ -16,6 +17,31 @@ app.get('/users/bebbs', function(request,response) {
                  "login": apiData.bebbs.login, 
                  "public_repos": apiData.bebbs.public_repos, 
                  "location": apiData.bebbs.location});
+});
+
+app.get('/users', function(request,response) {
+  console.log(request.query.username);
+
+  var options = {
+    host: 'https://api.github.com',
+    path: '/users/tansaku'
+  }
+
+  callback = function(response) {
+
+    var str = '';
+
+
+    response.on('data', function(chunk) {
+      str += chunk;
+     });
+
+    response.on('end', function() {
+      console.log(str);
+    });
+  };
+
+  https.request(options, callback).end();
 });
 
 server.listen(9999, function() {
