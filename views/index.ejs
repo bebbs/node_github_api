@@ -15,20 +15,26 @@
           <button class='search-button' type='submit' name='search'>SEARCH</button>
         </form>
       </section>
-      <section class='profile-container'>
+
+      <section class='github-container'></section>
+
+      <template class='profile-container'>
         <section class='image-container'>
-          <img src='https://avatars.githubusercontent.com/u/5008648'>
+          <img src='{{ avatar_url }}'>
         </section>
         <section class='info-container'>
-          <ul>
-            <li>FULL NAME</li>
-            <li>LOCATION</li>
-            <li>PUBLIC REPOS</li>
-          </ul>
+
+            <h2><a href='{{ html_url }}'>{{ login }}</a></h2>
+            <p><em>{{ name }}</em></p>
+            <p>{{ location }}</p>
+            <p><strong>Repos: </strong>{{ public_repos }}</p>
+
         </section>
         <span id="clearfix"></span>
-      </section>
+      </template>
     </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="./interface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
   </body>
 </html>

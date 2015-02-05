@@ -3,7 +3,8 @@ body {
 }
 
 .container {
-  background-color: yellow;
+  background-color: #ecf0f1;
+  border-radius: 10px;
   width: 50%;
   margin: auto;
   padding: 1%;
@@ -12,30 +13,34 @@ body {
 }
 
 .search-container{
-  background-color: blue;
   margin-bottom: 1%;
   padding: 1%;
+  padding-left: 0;
 }
 
 .profile-container {
-  background-color: red;
   padding: 10%;
   height: auto;
 }
 
 .search-box {
-  width: 80%;
+  width: 84%;
   float: left;
   box-sizing: border-box;
+  border: none;
+  padding: 0.3em;
 }
 
 .search-button {
   display: inline;
-  margin-left: 1%;
+  margin-left: 3%;
+  border: none;
+  background-color: #2980b9;
+  padding: 0.3em;
+  color: white;
 }
 
 .image-container {
-  background-color: green;
   width: 39%;
   float: left;
   margin-right: 3%;
@@ -43,7 +48,6 @@ body {
 }
 
 .info-container {
-  background-color: purple;
   width: 57%;
   float: left;
 }
@@ -54,6 +58,12 @@ h1 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #clearfix {   /* used to force the container to expand if the image is bigger */
