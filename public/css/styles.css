@@ -56,6 +56,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -65,6 +69,24 @@ img {
 ul {
   list-style-type: none;
 }
+
+.number {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.follower-container {
+  display: inline;
+  float: left;
+  margin-right: 5%;
+  text-align: center;
+  border: 1px solid #7f8c8d;
+  border-radius: 5px;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+
 
 #clearfix {   /* used to force the container to expand if the image is bigger */
   display: block;

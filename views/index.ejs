@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='css/styles.css'>
   </head>
   <body>
-    <h1>TITLE</h1>
+    <h1>GitHub Profiles</h1>
     <section class='container'>
       <section class='search-container'>
         <form id='add-profile'>
@@ -28,8 +28,11 @@
             <p><em>{{ name }}</em></p>
             <p>{{ location }}</p>
             <p><strong>Repos: </strong>{{ public_repos }}</p>
+            <section class='follower-container'><span class='number'>{{ followers }}</span> followers</section>
+            <section class='follower-container'><span class='number'>{{ following }}</span> following</section>
 
         </section>
+        <br>
         <span id="clearfix"></span>
       </template>
     </section>
