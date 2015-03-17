@@ -23,7 +23,6 @@ app.get('/users/:username', function(request, response) {
   };
 
   callback = function(res) {
-
     var str = '';
 
     res.on('data', function(chunk) {
@@ -44,5 +43,5 @@ app.get('/users/:username', function(request, response) {
 });
 
 server.listen(9999, function() {
-  console.log('Server has started bitches');
+  console.log('Server running on port 9999');
 });

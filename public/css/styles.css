@@ -9,7 +9,6 @@ body {
   margin: auto;
   padding: 1%;
   overflow: contain;
-  /*min-height: 100%;*/
 }
 
 .search-container{
@@ -88,7 +87,7 @@ ul {
 }
 
 
-#clearfix {   /* used to force the container to expand if the image is bigger */
+#clearfix {
   display: block;
   clear: both;
 }
