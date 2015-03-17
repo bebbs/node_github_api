@@ -1,4 +1,3 @@
-var http = require('http');
 var https = require('https');
 var express = require('express');
 var app = express();
@@ -18,7 +17,7 @@ app.get('/users/:username', function(request, response) {
   var options = {
     host: 'api.github.com',
     path: '/users/' + username,
-    headers: {'User-Agent': 'babidibubi'},
+    headers: {'User-Agent': 'NodeHubAPI'},
     method:'GET'
   };
 
