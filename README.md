@@ -19,12 +19,14 @@ res.on('data', function(chunk) {
 });
 ```
 
+Another new piece of technology was the use of **Grunt** to 'build' our application. With one command, this enabled us to run a linter against our JavaScript to check for errors, ensure all dependencies were present, and run our test suite. 
+
 ##Technologies used
 | Languages   | Frameworks  | Testing  |
 | ------------|-------------| -----|
 | JavaScript  | Node        | Mocha-casperjs |
 | HTML        | Express.js  | Phantomjs|
-| CSS         |    |  |
+| CSS         |    | JSHint  |
 
 ##Collaborators
 
