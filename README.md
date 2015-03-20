@@ -1,4 +1,4 @@
-# Battleships Web (Work in Progress)
+# Node Github API
 **Makers Academy Week 7 project**: Github API in Node
 
 <section align='center'>
